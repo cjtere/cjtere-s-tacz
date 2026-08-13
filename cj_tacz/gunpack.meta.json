@@ -1,0 +1,6 @@
+{
+  "namespace": "cj_tacz",
+  "dependencies": {
+    "tacz": "[1.1.4,)"
+  }
+}

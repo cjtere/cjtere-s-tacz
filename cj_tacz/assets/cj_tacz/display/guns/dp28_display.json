@@ -1,6 +1,8 @@
 {
+  "model_type": "mesh",
   "model": "cj_tacz:gun/dp28_geo",
   "texture": "cj_tacz:gun/uv/dp28",
   "slot": "cj_tacz:gun/slot/dp28",
-  "third_person_animation": "default"
+  "third_person_animation": "default",
+  "use_default_animation": "rifle"
 }
