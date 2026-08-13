@@ -1,0 +1,97 @@
+{
+  // Specify the guns and ammunition, we use the 7.62x39mm ammo type in the default gun pack.
+  "ammo": "tac:762x39",
+  // Max ammo
+  "ammo_amount": 30,
+  // Type type.Here we fill in the closed_bolt according to the type of AK47, and then explain it in detail later.
+  "bolt": "closed_bolt",
+  // Empty ammunition per minute, the maximum should not exceed 1200
+  "rpm": 550,
+  // Bullet attribute
+  "bullet": {
+    // The life time of the bullet in seconds
+    "life": 10,
+    // damgage the bullet does
+    "damage": 15,
+    // The speed of the bullet M/s
+    "speed": 840,
+    // Bullet Gravity
+    "gravity": 0,
+    // Knockback
+    "knockback": 0,
+    // Fly resistance
+    "friction": 0.01,
+    // Whether to ignite the target
+    "ignite": false,
+    // The maximum number of penetrating entities
+    "pierce": 5
+    // Explosive parameters, used for explosive weapons such as RPG, if not filled in, the warhead will not explode
+    //"explosion": {
+    //  "radius": 5
+    //}
+  },
+  // Changing parameters
+  "reload": {
+    // Fill in Magazine here, and the details are explained in the future.
+    "type": "magazine",
+    // The time of the magazine supply bomb is completed. At this point, the server will update the number of bullets in the gun
+    // Corresponding to the moment when the magazine is inserted in the animation.
+    "feed": {
+      // Empty chamber shift
+      "empty": 2.25,
+      // Tactical shift
+      "tactical": 1.55
+    },
+    // The magazine supply is long (second). At this point, the firearms can be opened and viewed.
+    // It usually corresponds to the moment when the guns are returning to the original in the animation.
+    "cooldown": {
+      // Empty chamber shift
+      "empty": 2.6,
+      // Tactical shift
+      "tactical": 2.0
+    }
+  },
+  // Takeout time/ Weapon draw time
+  "draw_time": 0.35,
+  // Holstering time
+  "put_away_time": 0.4,
+  // Ads speed unit in seconds
+  "aim_time": 0.2,
+  // Time till sprint, unit in seconds
+  "sprint_time": 0.3,
+  // Fire mode
+  "fire_mode": [
+    // Fully automatic
+    "auto",
+    // Semi -automatic
+    "semi"
+  ],
+  // After recoil, Pitch and Yaw need at least two key frames respectively respectively
+  "recoil": {
+    "pitch": [
+      // Time represents the position of the keyframe on the timeline, and Value represents the range of random value.
+      { "time": 0, "value": [0.7, 0.7] },
+      { "time": 0.25, "value": [0.7, 0.7] },
+      { "time": 0.45, "value": [-0.175, -0.175] },
+      { "time": 0.6, "value": [0, 0] }
+    ],
+    "yaw": [
+      { "time": 0, "value": [-0.35, -0.15] },
+      { "time": 0.25, "value": [-0.35, -0.15] },
+      { "time": 0.45, "value": [0, 0] }
+    ]
+  },
+  // Bullet inaccuracy
+  "inaccuracy": {
+    // Standing shooting
+    "stand": 2,
+    // Move shooting
+    "move": 4,
+    // Sneak shooting
+    "sneak": 1,
+    // Lying down and scattered
+    "lie": 0.5,
+    // Aiming accuracy
+    "aim": 0.2
+  }
+}

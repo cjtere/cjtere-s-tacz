@@ -1,0 +1,16 @@
+{
+  // The display name of the firearm supports whats defined in the language files.
+  "name": "cj_tacz.gun.dp28.name",
+  // The display file of the firearm corresponds to the GUNS/Display/DP28_DISPLAY.JSON, where the prefix "Gus/Display/" and the suffix ".json" does not need to be included.
+  "display": "cj_tacz:dp28_display",
+  // The firearm data file corresponds to the guns/data/dp28_data.json, of which the prefix "guns/data/" and suffix ".json" does not need to be included.
+  "data": "cj_tacz:dp28_data",
+  // Types of firearms are used to create label bar.
+  // All available categories: Pistol (pistol) SNIPER (sniper) Rifle (rifle) Shotgun (shotgun) SMG (submachine gun) MG (machine gun) RPG (rocket launcher)
+  "type": "rifle",
+  // Types of firearms, determine the logic of firearms, such as fire, loading, etc., the default is Modern_kinetic
+  "item_type": "modern_kinetic",
+  // The number of sorting determines the order in the creation mode tab
+  // The smaller the number, the higher the priority
+  "sort": 10
+}
